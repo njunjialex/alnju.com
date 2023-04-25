@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alnju.com cart</title>
+    <style>
+        *{
+            max-width: 1080px;
+        }
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+    
+}
+
+nav ul li {
+	margin-left: 1rem;
+}
+
+nav ul li:first-child {
+	margin-left: 0;
+}
+
+nav a {
+	color: #b42121;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+        .cart-page{
+            margin:80px auto;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th{
+            text-align: left;
+            padding: 5px;
+            color: #fff;
+            background: #ff523b;
+        }
+        td{
+            padding: 10px 5px;
+        }
+        td input{
+            width: 50px;
+            height: 40px;
+            padding: 5px;
+        }
+        .cart-info{
+            display: flex;
+            flex-wrap: wrap;
+        } 
+        td a{
+            color: #ff523b;
+            font-size: 15px;
+        }
+        td img{
+            width: 90px;
+            height: 90px;
+            margin-right:10px ;
+        }
+        .total-price{
+            display: flex;
+            justify-content:flex-end;
+        }
+        .total-price table{
+            border-top: 3px solid black;
+            width: 100%;
+            margin-left: 350px;
+        }
+        td:last-child{
+            text-align: right;
+        }
+        th:last-child{
+            text-align: right;
+        }
+        button[type="submit"] {
+	padding: 0.5rem;
+	background-color: orange;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="cart-page">
+        <table>
+            <tr> 
+                <th>product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/1 (16).jpg">
+                        <p></p>
+                        <p>price</p>
+                        <a href=" " >Remove</a>   
+                    </div>
+
+                </td>
+                <td><input type="number" value="1">
+            </tr>    
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/Oraimo Silver edition.jpg">
+                        <p></p>
+                        <p>price</p>
+                        <a href=" " >Remove</a>   
+                    </div>
+
+                </td>
+                <td><input type="number" value="1">
+            </tr>    
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/Dell Latitude E5550.jpg">
+                        <p></p>
+                        <p>price</p>
+                        <a href=" " >Remove</a>   
+                    </div>
+
+                </td>
+                <td><input type="number" value="1">
+            </tr>    
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Ksh 35,000</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>Ksh 350</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Ksh 35,950</td>
+                </tr>
+            </table>
+        </div>
+        <button type="submit">Order Now</button>
+    </div>    
+</body>
+</html>
